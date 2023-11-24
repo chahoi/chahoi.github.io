@@ -1,0 +1,74 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navigation Bar Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Main Content Styles */
+main {
+    padding: 1rem;
+}
+
+/* Sidebar Styles */
+aside {
+    background-color: #e4e4e4;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Section and Article Styles */
+section, article {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: white;
+}
+
+/* Small Screen Responsiveness */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+}

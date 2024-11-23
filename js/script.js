@@ -1,24 +1,54 @@
-// Select the toggle button
-const themeToggle = document.querySelector('.theme-toggle');
+document.addEventListener("DOMContentLoaded", () => {
+  // Typing Effect
+  const typeEffect = (element, speed) => {
+    const text = element.innerHTML;
+    element.innerHTML = "";
+    let i = 0;
 
-// Check for saved theme in localStorage
-const savedTheme = localStorage.getItem('theme') || 'light';
-document.documentElement.setAttribute('data-theme', savedTheme);
+    const type = () => {
+      if (i < text.length) {
+        element.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
+    };
 
-// Update the button text based on the current theme
-themeToggle.textContent = savedTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+    type();
+  };
 
-// Add event listener to toggle button
-themeToggle.addEventListener('click', () => {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  const heroTitle = document.querySelector(".hero h1");
+  typeEffect(heroTitle, 100);
 
-  // Set the new theme
-  document.documentElement.setAttribute('data-theme', newTheme);
+  // Scroll Reveal
+  const scrollElements = document.querySelectorAll(".scroll-reveal");
 
-  // Save the new theme in localStorage
-  localStorage.setItem('theme', newTheme);
+  const elementInView = (el, dividend = 1) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+      elementTop <=
+      (window.innerHeight || document.documentElement.clientHeight) / dividend
+    );
+  };
 
-  // Update the button text
-  themeToggle.textContent = newTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+  const displayScrollElement = (element) => {
+    element.classList.add("in-view");
+  };
+
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el, 1.25)) {
+        displayScrollElement(el);
+      }
+    });
+  };
+
+  window.addEventListener("scroll", handleScrollAnimation);
+
+  // Custom Cursor
+  const cursor = document.querySelector(".custom-cursor");
+
+  document.addEventListener("mousemove", (event) => {
+    cursor.style.left = `${event.clientX}px`;
+    cursor.style.top = `${event.clientY}px`;
+  });
 });

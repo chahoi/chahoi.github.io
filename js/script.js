@@ -9,27 +9,31 @@ gsap.from(".skills-grid .skill", {
   duration: 1,
 });
 
-// Dark Mode Toggle
+// Select the toggle button
 const themeToggle = document.querySelector('.theme-toggle');
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-});
 
-// Contact Form Alert
-document.getElementById('contact-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert("Thank you! Your message has been sent.");
-});
+// Check for saved theme in localStorage
+const savedTheme = localStorage.getItem('theme') || 'light';
+document.documentElement.setAttribute('data-theme', savedTheme);
 
-// Dark Mode Toggle
-const themeToggle = document.querySelector('.theme-toggle');
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  const isDarkMode = document.body.classList.contains('dark-mode');
-  localStorage.setItem('darkMode', isDarkMode);
-});
-
-// Preserve Dark Mode State
-if (localStorage.getItem('darkMode') === 'true') {
-  document.body.classList.add('dark-mode');
+// Update the button text based on the current theme
+if (savedTheme === 'dark') {
+  themeToggle.textContent = 'Light Mode';
+} else {
+  themeToggle.textContent = 'Dark Mode';
 }
+
+// Add event listener to toggle button
+themeToggle.addEventListener('click', () => {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  
+  // Set the new theme
+  document.documentElement.setAttribute('data-theme', newTheme);
+  
+  // Save the new theme in localStorage
+  localStorage.setItem('theme', newTheme);
+  
+  // Update the button text
+  themeToggle.textContent = newTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+});

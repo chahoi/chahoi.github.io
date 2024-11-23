@@ -1,66 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jake Choi - IT Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Choi - IT Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Custom Cursor -->
-  <div class="custom-cursor"></div>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
 
-  <!-- Navbar section -->
-  <header class="header">
-    <nav class="navbar">
-      <a href="index.html" class="logo">Jake Choi</a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="nav-item">Work</a></li>
-        <li><a href="about.html" class="nav-item">About</a></li>
-        <li><a href="assets/Jake_Choi_Resume.pdf" class="btn" download>Resume</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Navbar section -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Jake Choi</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-item">Work</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="assets/Jake_Choi_Resume.pdf" class="btn" download>Resume</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Jake Choi</h1>
+            <p>IT Specialist passionate about delivering innovative solutions.</p>
+        </div>
+    </section>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm Jake Choi</h1>
-      <p>IT Specialist passionate about delivering innovative solutions.</p>
-    </div>
-  </section>
+    <!-- Work Section -->
+    <section id="work" class="work scroll-reveal">
+        <h2>My Work</h2>
+        <div class="work-list">
+            <div class="work-item scroll-reveal">
+                <h3>Code Ninjas - NFC Reward Website</h3>
+                <p>Developed an NFC-integrated site for educational rewards using React and AWS.</p>
+            </div>
+            <div class="work-item scroll-reveal">
+                <h3>PoseIT - Pose Matching Game</h3>
+                <p>Created a 3D pose-matching game with Firebase and Node.js, enhancing user engagement.</p>
+            </div>
+            <div class="work-item scroll-reveal">
+                <h3>Longevity Graphics - Web Developer</h3>
+                <p>Designed and maintained responsive websites with HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Work Section -->
-  <section id="work" class="work scroll-reveal">
-    <h2>My Work</h2>
-    <div class="work-list">
-      <div class="work-item scroll-reveal">
-        <h3>Code Ninjas - NFC Reward Website</h3>
-        <p>Developed an NFC-integrated site for educational rewards using React and AWS.</p>
-      </div>
-      <div class="work-item scroll-reveal">
-        <h3>PoseIT - Pose Matching Game</h3>
-        <p>Created a 3D pose-matching game with Firebase and Node.js, enhancing user engagement.</p>
-      </div>
-      <div class="work-item scroll-reveal">
-        <h3>Longevity Graphics - Web Developer</h3>
-        <p>Designed and maintained responsive websites with HTML, CSS, and JavaScript.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+            <li>IT Support</li>
+            <li>Web Development</li>
+            <li>System Optimization</li>
+            <li>Networking</li>
+            <li>Customer Service</li>
+        </ul>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Feel free to reach out for collaborations or inquiries.</p>
-    <a href="mailto:9822cj1@gmail.com" class="btn">Send Email</a>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:9822cj1@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Email</button>
+        </form>
+    </section>
 
-  <footer class="footer">
-    <p>© 2024 Jake Choi. All Rights Reserved.</p>
-  </footer>
+    <footer class="footer">
+        <p>© 2024 Jake Choi. All Rights Reserved.</p>
+    </footer>
 
-  <script src="js/main.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

@@ -16,9 +16,10 @@ body {
   line-height: 1.6;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
-/* Navbar */
+/* Header/Navbar */
 .header {
   position: sticky;
   top: 0;
@@ -57,7 +58,7 @@ body {
   display: inline-block;
 }
 
-.nav-links a {
+.nav-item {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -65,7 +66,7 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-item:hover {
   color: #03a9f4;
 }
 
@@ -98,6 +99,8 @@ body {
   margin-bottom: 1rem;
   color: #fff;
   overflow: hidden;
+  border-right: 3px solid transparent; /* Simulates a cursor during typing */
+  white-space: nowrap;
 }
 
 /* Scroll Reveal */
@@ -112,14 +115,78 @@ body {
   transform: translateY(0);
 }
 
+/* Work Section */
+.work {
+  padding: 2rem;
+  text-align: center;
+}
+
+.work h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.work-item {
+  margin-bottom: 2rem;
+}
+
+.work-item h3 {
+  font-size: 1.5rem;
+  color: #00bcd4;
+}
+
+.work-item p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Contact Section */
+.contact {
+  padding: 2rem;
+  text-align: center;
+  background-color: #1f1f1f;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact .btn {
+  background-color: #03a9f4;
+}
+
+/* Footer */
+.footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: #1f1f1f;
+  color: #ccc;
+}
+
 /* Custom Cursor */
 .custom-cursor {
-  position: absolute;
+  position: fixed;
   width: 15px;
   height: 15px;
   background-color: #00bcd4;
   border-radius: 50%;
   pointer-events: none;
   mix-blend-mode: difference;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out;
+}
+
+/* Typing Effect */
+.hero h1 {
+  font-size: 3rem;
+  color: #fff;
+  animation: blinkCursor 0.7s steps(40) infinite normal;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: #fff;
+  }
 }

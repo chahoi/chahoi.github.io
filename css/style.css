@@ -267,23 +267,14 @@ body {
 
 /* Dark Mode */
 body.dark-mode {
-  background: #121212;
+  background-color: #121212;
   color: #f9f9f9;
 }
 
-body.dark-mode .header {
-  background: #1f1f1f;
+body.dark-mode .header, body.dark-mode .footer {
+  background-color: #1f1f1f;
 }
 
-body.dark-mode .footer {
-  background: #1f1f1f;
-}
-
-body.dark-mode .btn {
-  background: #03a9f4;
-}
-
-body.dark-mode .skill:hover {
-  background: #ff9800;
-  color: white;
+body.dark-mode a, body.dark-mode p, body.dark-mode h2 {
+  color: #fff;
 }

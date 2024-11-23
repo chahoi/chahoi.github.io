@@ -119,27 +119,31 @@ body {
 
 /* Work Section */
 .work {
-  padding: 2rem;
-  text-align: center;
+    padding: 2rem;
+    text-align: center;
 }
 
 .work h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.work-list {
+    color: #ffffff; /* Set text color to white */
 }
 
 .work-item {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .work-item h3 {
-  font-size: 1.5rem;
-  color: #00bcd4;
+    font-size: 1.5rem;
+    color: #00bcd4;
 }
 
 .work-item p {
-  font-size: 1rem;
-  color: #ccc;
+    font-size: 1rem;
+    color: #ccc;
 }
 
 /* Contact Section */

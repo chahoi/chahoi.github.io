@@ -32,12 +32,6 @@ body {
   align-items: center;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
 .nav-links a {
   text-decoration: none;
   font-size: 1rem;

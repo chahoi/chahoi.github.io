@@ -265,6 +265,36 @@ body {
   font-size: 0.9rem;
 }
 
+/* Light Mode (default) */
+[data-theme="light"] {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+[data-theme="light"] .header, [data-theme="light"] .footer {
+  background-color: #fff;
+  color: #333;
+}
+
+[data-theme="light"] a {
+  color: #00bcd4;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  background-color: #121212;
+  color: #f9f9f9;
+}
+
+[data-theme="dark"] .header, [data-theme="dark"] .footer {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+[data-theme="dark"] a {
+  color: #ff9800;
+}
+
 /* Dark Mode */
 body.dark-mode {
   background-color: #121212;

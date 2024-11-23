@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+
   <!-- Header -->
   <header class="header">
     <nav class="navbar">
       <a href="index.html" class="logo">Jake Choi</a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Work</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="assets/Jake_Choi_Resume.pdf" download class="btn">Resume</a></li>
       </ul>
@@ -24,23 +26,22 @@
     <div class="hero-content">
       <h1>Hi, I'm Jake Choi</h1>
       <p>IT Specialist passionate about delivering innovative solutions.</p>
-      <a href="#work" class="btn">View My Work</a>
     </div>
   </section>
 
   <!-- Work Section -->
-  <section id="work" class="work">
+  <section id="work" class="work scroll-reveal">
     <h2>My Work</h2>
     <div class="work-list">
-      <div class="work-item">
+      <div class="work-item scroll-reveal">
         <h3>Code Ninjas - NFC Reward Website</h3>
         <p>Developed an NFC-integrated site for educational rewards using React and AWS.</p>
       </div>
-      <div class="work-item">
+      <div class="work-item scroll-reveal">
         <h3>PoseIT - Pose Matching Game</h3>
         <p>Created a 3D pose-matching game with Firebase and Node.js, enhancing user engagement.</p>
       </div>
-      <div class="work-item">
+      <div class="work-item scroll-reveal">
         <h3>Longevity Graphics - Web Developer</h3>
         <p>Designed and maintained responsive websites with HTML, CSS, and JavaScript.</p>
       </div>
@@ -54,9 +55,10 @@
     <a href="mailto:9822cj1@gmail.com" class="btn">Send Email</a>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <p>© 2024 Jake Choi. All Rights Reserved.</p>
   </footer>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>

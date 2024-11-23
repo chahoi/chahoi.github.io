@@ -20,15 +20,15 @@ body {
 }
 
 /* Header/Navbar */
+/* Navbar */
 .header {
   position: sticky;
   top: 0;
-  background-color: #1f1f1f;
+  background-color: transparent; /* Transparent background for minimal look */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
 
@@ -42,14 +42,14 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #00bcd4;
+  color: #ffffff; /* White font for the logo */
   text-decoration: none;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem; /* Increased spacing between links */
   margin: 0;
   padding: 0;
 }
@@ -62,26 +62,28 @@ body {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  color: #00bcd4;
+  color: #ffffff; /* White font for nav items */
   transition: color 0.3s ease;
 }
 
 .nav-item:hover {
-  color: #03a9f4;
+  color: #b3b3b3; /* Light gray for hover effect */
 }
 
 .btn {
-  background-color: #00bcd4;
-  color: #fff;
+  background: none; /* Remove button background */
+  border: 1px solid #ffffff; /* Add white border */
+  color: #ffffff; /* White font for button */
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #03a9f4;
+  background-color: #ffffff; /* Invert hover background */
+  color: #121212; /* Black text on hover */
 }
 
 /* Hero Section */

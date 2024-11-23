@@ -1,55 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
-    <!-- Add your metadata here -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Add stylesheet links here -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jake Choi - IT Support Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <header>
-        <!-- Header content goes here -->
-        <h1>Welcome to Jake Choi's Website</h1>
-    </header>
-
-    <nav>
-        <!-- Navigation bar content goes here -->
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="logo">Jake Choi</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <!-- Main content goes here -->
-        <section>
-            <h2>Section Title</h2>
-            <p>This is a paragraph in a section.</p>
-        </section>
-        <article>
-            <h2>Article Title</h2>
-            <p>This is an article.</p>
-        </article>
-    </main>
+  <section id="hero" class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm Jake Choi, an IT Support Specialist with expertise in system optimization, web development, and problem-solving.</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </section>
 
-    <aside>
-        <!-- Sidebar or additional content goes here -->
-        <p>This is an aside.</p>
-    </aside>
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a Computer Information Technology graduate with a strong passion for IT systems and web development. My experience spans troubleshooting, networking, and building interactive applications.</p>
+  </section>
 
-    <footer>
-        <!-- Footer content goes here -->
-        <p>Copyright &copy; 2023 My Website</p>
-    </footer>
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">Windows 10/11</div>
+      <div class="skill">Linux</div>
+      <div class="skill">HTML, CSS, JS</div>
+      <div class="skill">React</div>
+      <div class="skill">AWS</div>
+      <div class="skill">Docker</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Photoshop</div>
+    </div>
+  </section>
 
-    <!-- Add script tags here -->
-    <!-- <script src="js/jquery.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>NFC-integrated Reward Website</h3>
+      <p>Developed an NFC-integrated site for Code Ninjas using React and AWS. Enhanced participation with an educational rewards system.</p>
+      <a href="https://codeninjasrewards.com" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Pose Matching Game</h3>
+      <p>Created a real-time pose-matching game using 3D camera tracking and Firebase, recognized for technical complexity and engagement.</p>
+      <a href="https://shorturl.at/voSHn" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Responsive Websites</h3>
+      <p>Designed and maintained responsive websites for Longevity Graphics, optimizing performance and user experience.</p>
+    </div>
+  </section>
 
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p>Email: <a href="mailto:9822cj1@gmail.com">9822cj1@gmail.com</a></p>
+    <p>Phone: +1 778 899 7814</p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 Jake Choi. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
